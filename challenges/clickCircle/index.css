@@ -1,0 +1,19 @@
+.canvas {
+    /* position: relative; */
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    }
+
+.circle {
+    position: absolute;
+    /* height: 75px; */
+    /* width: 75px; */
+    border-radius: 50%;
+    border: 1px solid red;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    margin: 0;
+}
