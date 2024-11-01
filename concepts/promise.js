@@ -19,9 +19,9 @@ const promise2 = new Promise((resolve, reject) => {
   
 });
 
-// Promise.all([promise1, promise2]).then((data) => {
-//     console.log(data);
-// })
+Promise.all([promise1, promise2]).then((data) => {
+    console.log(data);
+})
 
 // Promise.allSettled([promise1, promise2]).then((data) => {
 //         console.log(data);
@@ -33,8 +33,8 @@ const promise2 = new Promise((resolve, reject) => {
 //     console.log(err);
 // })
 
-Promise.any([promise1, promise2]).then((data) => {
-    console.log(data);
-}).catch((err) => {
-    console.log(err);
-})
+// Promise.any([promise1, promise2]).then((data) => {
+//     console.log(data);
+// }).catch((err) => {
+//     console.log(err);
+// })

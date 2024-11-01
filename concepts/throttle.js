@@ -1,5 +1,7 @@
 /** Throttling is a technique that limits execution of a function
  * to once in every specific time interval
+ * 
+ * throttle function limits the number of times a function can be executed in a specified time frame
  */
 
 window.addEventListener('resize', () => {

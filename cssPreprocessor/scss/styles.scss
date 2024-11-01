@@ -1,0 +1,12 @@
+@import 'variable';
+@import 'mixins';
+@import 'buttons';
+
+
+h1 {
+    color: $primary-color;
+}
+
+h2 {
+    color: $secondary-color;
+}

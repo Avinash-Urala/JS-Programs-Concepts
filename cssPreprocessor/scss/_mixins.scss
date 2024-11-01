@@ -1,0 +1,11 @@
+@mixin button_style($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: lighten($color: $bg-color, $amount: 10%);
+  }
+}
