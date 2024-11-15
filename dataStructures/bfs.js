@@ -20,12 +20,24 @@ function bfs(graph, starting_node) {
     
 }
 
+// const graph = {
+//     A: ['B', 'C'],
+//     B: ['A', 'D', 'E'],
+//     C: ['A', 'F'],
+//     D: ['B'],
+//     E: ['B', 'F'],
+//     F: ['C', 'E'],
+// };
 const graph = {
-    A: ['B', 'C'],
-    B: ['A', 'D', 'E'],
-    C: ['A', 'F'],
-    D: ['B'],
-    E: ['B', 'F'],
-    F: ['C', 'E'],
-};
+    A: ['B', 'C', 'D'],
+  B: ['E', 'F'],
+  C: ['G', 'H'],
+  D: ['I', 'J'],
+  E: ['D'],
+  F: [],
+  G: [],
+  H: [],
+  I: [],
+  J: [],
+}
 bfs(graph, 'A');

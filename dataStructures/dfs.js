@@ -34,12 +34,7 @@ function constructPath(parent, starting_node, target_node) {
 }
 
 const graph = {
-    A: ['B', 'C'],
-    B: ['A', 'D', 'E'],
-    C: ['A', 'F'],
-    D: ['B'],
-    E: ['B', 'F'],
-    F: ['C', 'E'],
+     A: ['B', 'C'], B: [], C: [] 
 };
 
 console.log(dfs(graph, 'A', 'F'));

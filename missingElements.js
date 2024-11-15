@@ -7,6 +7,7 @@ function missingElements(arr) {
         if(arr.indexOf(i) === -1) {
             result.push(i);
             arr.splice(i-1, 0, i);
+            // arr[i - 1] = i;
         }
     }
     console.log(arr);
