@@ -6,6 +6,7 @@ document.querySelector('#canvas').addEventListener('click', (event) => {
     const size = Math.random() * 50 + 25;
     div.style.width = `${size}px`;
     div.style.height = `${size}px`;
+    div.style.backgroundColor
 
     if(event.target.id === 'circle') {
         var randomColor = Math.floor(Math.random()*16777215).toString(16);

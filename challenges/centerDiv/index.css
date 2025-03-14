@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.selected {
+    background-color: chocolate;
+}
