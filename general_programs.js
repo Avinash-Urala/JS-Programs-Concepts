@@ -111,8 +111,46 @@ console.log(maxProductSubArray([2,3,-2,4]))
 
 // --------------------------------------------------------------------
 // Validate Anagrams
+function validateAnagrams(s, t) {
+  
+  if(s.length !== t.length) {
+    return false;
+  }
+  const map = {};
+  
+  for(let char of s) {
+    map[char] = (map[char] || 0) + 1;
+  }
+  
+  for(let char of t) {
+    if(!map[char]) return false;
+    
+    map[char]--;
+  }
+  
+  return true;
+}
+
+console.log(validateAnagrams('silent','listenn'));
 
 // --------------------------------------------------------------------
 // Group Anagrams
 
+function groupAnagrams(strs) {
+  
+  const map = {};
+  
+  for(let word of strs) {
+    const key = word.split('').sort().join('');
+    
+    if(!map[key]) {
+      map[key] = [];
+    }
+    
+    map[key].push(word);
+  }
+  
+  return Object.values(map);
+}
 
+console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]));
